@@ -184,5 +184,50 @@ Total 3 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/edmundhenley/dashboard-trial.git
    c6cc607..c1c42fb  master -> master
-(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial#
+
+# Set up a develop branch, so I can use GitFlow: https://nvie.com/posts/a-successful-git-branching-model/
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git branch -v -a
+* master                6b4b611 Use markdown in setup files
+  remotes/origin/HEAD   -> origin/master
+  remotes/origin/master 6b4b611 Use markdown in setup files
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git checkout -b develop
+Switched to a new branch 'develop'
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git branch -v -a
+* develop               6b4b611 Use markdown in setup files
+  master                6b4b611 Use markdown in setup files
+  remotes/origin/HEAD   -> origin/master
+  remotes/origin/master 6b4b611 Use markdown in setup files
+
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git push --set-upstream origin develop
+Username for 'https://github.com': edmundhenley
+Password for 'https://edmundhenley@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/edmundhenley/dashboard-trial/pull/new/develop
+remote: 
+To https://github.com/edmundhenley/dashboard-trial.git
+ * [new branch]      develop -> develop
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
+
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git branch -v -a
+* develop                6b4b611 Use markdown in setup files
+  master                 6b4b611 Use markdown in setup files
+  remotes/origin/HEAD    -> origin/master
+  remotes/origin/develop 6b4b611 Use markdown in setup files
+  remotes/origin/master  6b4b611 Use markdown in setup files
+
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git status
+On branch develop
+Your branch is up to date with 'origin/develop'.
+
+nothing to commit, working tree clean
+
+
 ```
