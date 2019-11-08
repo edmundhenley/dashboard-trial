@@ -1,3 +1,4 @@
+```bash
 # Set up a new project "dashboard-trial" on GitHub using GH's UI
 # Chose a Python .gitignore, and an MIT licence 
 
@@ -125,4 +126,63 @@ Changes to be committed:
 
         modified:   setup_reminders/git_setup.txt
 
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git mv setup_reminders/conda_setup.txt setup_reminders/conda_setup.md
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git mv setup_reminders/git_setup.txt setup_reminders/git_setup.md
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git status
+On branch master
+Your branch is up to date with 'origin/master'.
 
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    setup_reminders/conda_setup.txt -> setup_reminders/conda_setup.md
+        renamed:    setup_reminders/git_setup.txt -> setup_reminders/git_setup.md
+
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git commit
+[master c1c42fb] Change setup files to markdown format
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename setup_reminders/{conda_setup.txt => conda_setup.md} (100%)
+ rename setup_reminders/{git_setup.txt => git_setup.md} (100%)
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git push origin masterUsername for 'https://github.com': edmundhenley
+Password for 'https://edmundhenley@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 449 bytes | 224.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/edmundhenley/dashboard-trial.git
+   c6cc607..c1c42fb  master -> master
+
+# Rename to markdown format, and push up
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git mv setup_reminders/conda_setup.txt setup_reminders/conda_setup.md
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git mv setup_reminders/git_setup.txt setup_reminders/git_setup.md
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    setup_reminders/conda_setup.txt -> setup_reminders/conda_setup.md
+        renamed:    setup_reminders/git_setup.txt -> setup_reminders/git_setup.md
+
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git commit
+[master c1c42fb] Change setup files to markdown format
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename setup_reminders/{conda_setup.txt => conda_setup.md} (100%)
+ rename setup_reminders/{git_setup.txt => git_setup.md} (100%)
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git push origin masterUsername for 'https://github.com': edmundhenley
+Password for 'https://edmundhenley@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 449 bytes | 224.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/edmundhenley/dashboard-trial.git
+   c6cc607..c1c42fb  master -> master
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial#
+```

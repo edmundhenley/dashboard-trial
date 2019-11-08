@@ -1,3 +1,4 @@
+```bash
 root@jupyter-edmundhenley:/home/jovyan# conda init bash
 no change     /opt/conda/condabin/conda
 no change     /opt/conda/bin/conda
@@ -216,3 +217,5 @@ Executing transaction: done
 (/root/my-conda-envs/edmund-workshop) root@jupyter-edmundhenley:/home/jovyan# python -m ipykernel install --name "edmund-workshop" --display-name "EdEnv" --user
 Installed kernelspec edmund-workshop in /home/jovyan/.local/share/jupyter/kernels/edmund-workshop
 (/root/my-conda-envs/edmund-workshop) root@jupyter-edmundhenley:/home/jovyan#
+
+```
