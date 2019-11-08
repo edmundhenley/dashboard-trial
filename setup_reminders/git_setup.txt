@@ -1,0 +1,33 @@
+# Set up a new project "dashboard-trial" on GitHub using GH's UI
+# Chose a Python .gitignore, and an MIT licence 
+(base) root@jupyter-edmundhenley:/home/jovyan# cd Edmund
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# #git config --global user.name "[name]"
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# #git config --global user.email "[email address]"
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# git config --global color.ui auto
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# git clone https://github.com/edmundhenley/dashboard-trial.git
+Cloning into 'dashboard-trial'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# cd dashboard-trial/
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund/dashboard-trial# cd ..
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# mkdir dashboard-trial/setup_reminders
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# mv setup_reminders/* dashboard-trial/setup_reminders/
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# rmdir setup_reminders/
+rmdir: failed to remove 'setup_reminders/': Directory not empty
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# ls -al setup_reminders/
+total 12
+drwxr-xr-x 3 root root 4096 Nov  8 16:45 .
+drwxr-xr-x 5 root root 4096 Nov  8 16:39 ..
+drwxr-xr-x 2 root root 4096 Nov  8 16:34 .ipynb_checkpoints
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# rm setup_reminders/.ipynb_checkpoints/
+rm: cannot remove 'setup_reminders/.ipynb_checkpoints/': Is a directory
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# rm -rf setup_reminders/.ipynb_checkpoints/
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# rmdir setup_reminders/
+(base) root@jupyter-edmundhenley:/home/jovyan/Edmund# mv Ed_dashboard_trial.ipynb dashboard-trial/Ed_dashboard-trial.ipynb
